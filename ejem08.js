@@ -1,0 +1,5 @@
+console.log(typeof 33)
+console.log(typeof 'hola')
+console.log(typeof false)
+console.log(typeof function(){} ) 
+console.log(typeof { })
