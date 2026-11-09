@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-anxo : #008000;
+  --font-cebem : Roboto;
+
+}
+
+:root{
+
+}
+
+#social .button-icon{
+   filter : invert(1) brightness(2); 
+}
+
+body {
+  margin : 0;
+}
