@@ -12,7 +12,6 @@ permissions:
 
 jobs:
 
-  # JOB 1: TEST
   test:
     runs-on: ubuntu-latest
 
@@ -32,7 +31,6 @@ jobs:
       - name: Ejecutar tests
         run: npm test
 
-  # JOB 2: BUILD
   build:
     needs: test
     runs-on: ubuntu-latest
@@ -59,7 +57,6 @@ jobs:
           name: dist-web
           path: dist/
 
-  # JOB 3: DEPLOY
   deploy:
     needs: build
     runs-on: ubuntu-latest
