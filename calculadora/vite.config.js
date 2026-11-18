@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/calculadora/'
+  base: '/calculadora_gitub_actions/'
 });

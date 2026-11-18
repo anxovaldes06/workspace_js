@@ -40,3 +40,16 @@ console.log(
 
 const media = alumnos.reduce((total,alumno) => total + alumno.nota, 0) / alumnos.length
 console.log(media)
+
+
+
+let productos = [
+    {nombre : 'tele', precio:60 , categoria : "electrico"},
+    {nombre : 'telefono' , precio:50, categoria : "electrico"},
+    {nombre : 'radio', precio:20 , categoria : "tecnologico"}
+]
+
+const precioproductElectMayor30 = productos.filter(producto => producto.precio >= 30 && producto.categoria == "electrico" )
+.map(producto => producto.precio)
+.reduce((acumulador,precioActual) => acumulador+precioActual , 0)
+console.log(productElectMayor30)
